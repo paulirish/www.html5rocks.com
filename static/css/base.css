@@ -1,4 +1,4 @@
-/* 
+/*
   # AVAILABLE WEIGHTS/STYLES
 
     300 (for headlines only)
@@ -3037,6 +3037,7 @@ section.disqus
 /* PRINT */
 
 @media print {
+
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
@@ -3061,13 +3062,17 @@ section.disqus
   pre .tag, code .tag { color: #006; font-weight: bold; }
   pre .atn, code .atn { color: #404; }
   pre .atv, code .atv { color: #060; }
+
+  .page header .share, nav, header hgroup, a.disqus_comments { display:none !important;}
+
 }
+*/
 
 
 /* RESPONSIVE */
 
 /* Get us promoted to a composited layer for these elements. Leave mobile
-   off because it already promotes position:fixed elements. Remove this when 
+   off because it already promotes position:fixed elements. Remove this when
    desktop follows suite. */
 
 @media only all and (max-width: 1024px) and (max-height: 768px)
@@ -3101,14 +3106,14 @@ section.disqus
     background-color: white !important;
     box-shadow: 1px 1px 10px #ccc;
   }
-  
+
   .page header .share {
     position: static !important;
   }
 }
 
 @media screen and (min-width: 768px) {
-  
+
   .subheader
   {
     background: #65A8A5;
@@ -3162,7 +3167,7 @@ section.disqus
     border-radius: 4px;
     margin-left: 7px;
   }
-  
+
   .subheader .search input[placeholder]::-webkit-input-placeholder {
     color: hsla(176, 27%, 33%, 0.4);
   }
@@ -3184,7 +3189,7 @@ section.disqus
   {
     display: none;
   }
-  
+
   .page header .share {
     position: static !important;
   }
@@ -3197,7 +3202,7 @@ section.disqus
 }
 
 @media screen and (min-width: 1000px) {
-  
+
   header.main,
   .watermark,
   article.tutorial nav.outline.toc.fixed
@@ -3265,17 +3270,17 @@ section.disqus
   /* Homepage */
 
   article.sectioned section.one_third  { width: 32%; }
-  
+
   nav.outline.toc
   {
     box-shadow: 1px 1px 10px #ccc !important;
   }
-  
+
   .pattern-bg-lighter,
   article.sectioned > section:not(#classes) {
-    border-radius: 5px; 
+    border-radius: 5px;
   }
-  
+
   article.tutorial nav.outline.toc.fixed
   {
     position: fixed;
@@ -3296,7 +3301,7 @@ section.disqus
   #profiles_menu {  }
   #contrib_menu {  }
   #search_show span { display: none; }
-  
+
   .page,
   .page header,
   header,
@@ -3511,7 +3516,7 @@ section.disqus
 }
 
 @media screen and (max-width: 860px) {
-  
+
   #home_menu {}
   #tutorials_menu {}
   #updates_menu {}
@@ -3521,11 +3526,11 @@ section.disqus
   #why_menu {}
   #contrib_menu { display: none; }
   #search_show span { display: none; }
-  
+
   header.main nav ul li a, #home_horns
   header.main nav ul li#features_show,
   header.main h1
-  {    
+  {
   }
 
   header.main nav ul li#features_show {
@@ -3612,12 +3617,12 @@ section.disqus
   #profiles_menu { display: none; }
   #contrib_menu { display: none; }
   #search_show span { display: none; }
-  
-  
+
+
   header.main {
-    padding-bottom: 0 !important;	
+    padding-bottom: 0 !important;
   }
-	
+
   header.main #home_horns
   {
     display: block !important;
@@ -3628,7 +3633,7 @@ section.disqus
 
   header.main #home_horns img {
     width: 12px;
-    height: 24px;	
+    height: 24px;
   }
 
   header.main nav li:first-child,
@@ -3672,7 +3677,7 @@ section.disqus
   {
     margin: 0 !important;
   }
-  
+
   section
   {
     float: none !important;
@@ -3717,7 +3722,7 @@ section.disqus
 }
 
 @media screen and (max-width: 600px) {
-  
+
   #home_menu {}
   #tutorials_menu {}
   #updates_menu {}
@@ -3727,7 +3732,7 @@ section.disqus
   #profiles_menu { display: none; }
   #contrib_menu { display: none; }
   #search_show span { display: none; }
-  
+
   ul.definitions
   {
     -moz-column-count: 0;
@@ -3750,7 +3755,7 @@ section.disqus
     height: inherit;
     margin: .75em 0 !important;
   }
-  
+
   article.tutorial .outline_nav_toggle {
     position: fixed;
     bottom: 0;
@@ -3767,15 +3772,15 @@ section.disqus
     -webkit-transition: top 0.2s ease-in-out;
     transition: top 0.2s ease-in-out;
   }
-  
-  article.tutorial .outline_nav_toggle h3 { 
+
+  article.tutorial .outline_nav_toggle h3 {
     margin: 0px !important;
   }
-  
+
   article.tutorial .outline_nav_toggle ul {
     display: none;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated {
     top: 0 !important;
     bottom: 0 !important;
@@ -3788,56 +3793,56 @@ section.disqus
     box-sizing: border-box;
     overflow-y: auto !important;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated  ul {
     display: block;
   }
-  
-  article.tutorial .outline_nav_toggle.activated h3 { 
+
+  article.tutorial .outline_nav_toggle.activated h3 {
     margin: 1em;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated ul a {
     color: #ddd;
     margin: 0;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated ul a:active {
     color: #ddd;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated ul a:visited {
     color: #ddd;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated ul ul a {
     color: #bbb;
     color: #bbb !important;
     margin: 0;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated ul ul  a:active {
     color: #bbb;
     color: #bbb !important;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated ul ul ul a:visited {
     color: #bbb !important;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated ul ul ul a {
     color: #999 !important;
     margin: 0;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated ul ul ul a:active {
     color: #999 !important;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated ul ul ul a:visited {
     color: #999 !important;
   }
-  
+
   article.tutorial nav {
     background-color: #EC4936 !important;
     color: white;
@@ -3847,22 +3852,22 @@ section.disqus
     margin: 0;
     margin-top: 4px !important;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated nav {
     background-color: transparent !important;
     color: white;
     text-align: inherit;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated nav.outline.toc ul {
     margin-left: 1em;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated h3 {
     font-size: 18px;
     font-weight: 400;
   }
-  
+
   article.tutorial .outline_nav_toggle.activated nav li {
     margin-bottom: 1em;
     font-size:16px;
@@ -3888,7 +3893,7 @@ section.disqus
     list-style: none !important;
     overflow: visible;
   }
-  
+
 
   .two_columns
   {
@@ -3898,12 +3903,12 @@ section.disqus
     -webkit-column-count: 1;
     column-count: 1;
   }
-  
+
   div.one_quarter,
   div.one_half    { float: left; }
-  div.one_quarter { 
+  div.one_quarter {
     width: 50%;
-    padding-bottom: .75em; 
+    padding-bottom: .75em;
   }
   div.one_half    { width: 100%; }
 
@@ -3937,7 +3942,7 @@ section.disqus
   body[data-href="home"] article.profile section { padding: 0 4% !important; }
   body[data-href="home"] article.profile:nth-child(3n + 1) { margin-left: 2% !important; }
   body[data-href="home"] article.profile:nth-child(2n + 1) { margin-left: 0 !important; }
-  
+
   nav.toc {
     position: fixed !important;
     bottom: 0;
@@ -3946,7 +3951,7 @@ section.disqus
     height: 5px;
     background-color: #ed4732;
   }
-  
+
   .page header .share {
     position: static !important;
   }
@@ -3965,9 +3970,9 @@ section.disqus
 
   nav.outline {
     max-height: none !important;
-  }   
+  }
 
-  .page, 
+  .page,
   .page.current,
   .page header
   {
@@ -3984,7 +3989,7 @@ section.disqus
     float: left;
   }
 
-  
+
   header.main h1
   {
     margin: .1em;
@@ -3993,7 +3998,7 @@ section.disqus
 
   header.tutorial .browser_support {
     margin: none !important;
-    padding: none !important;	
+    padding: none !important;
   }
 
   header.main nav ul li#features_show {
@@ -4016,7 +4021,7 @@ section.disqus
   {
     width: 160px;
   }
-  
+
   /* Homepage */
 
   body[data-href="home"] article.profile
